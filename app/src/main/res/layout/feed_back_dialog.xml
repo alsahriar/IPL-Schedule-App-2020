@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:background="@drawable/dialog_bg">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="User Feedback!"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your rating"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_gravity="center"/>
+    <RatingBar
+        android:id="@+id/ratingId"
+        android:progressTint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:rating="4.5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInput_layout"
+        android:layout_margin="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:fontFamily="serif"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_txt"
+            android:hint="Type your name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInput_layout2"
+        android:layout_margin="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:fontFamily="serif"
+            android:textSize="12sp"
+            android:layout_width="300dp"
+            android:maxLines="5"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedback_txt"
+            android:hint="Type your feedback"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:background="@drawable/cancel_btn_bg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:fontFamily="serif"
+            android:id="@+id/submit_btn"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@drawable/submit_btn_bg"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    tools:ignore="MergeRootFrame">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drwerID">
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:weightSum="10">
+
+             <LinearLayout
+
+
+                 android:weightSum="5"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="2"
+                 android:background="@drawable/background"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <ImageView
+                     android:layout_marginTop="5dp"
+                     android:layout_width="70dp"
+                     android:layout_height="0dp"
+                     android:layout_weight="3.5"
+                     android:src="@drawable/iplp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1.5"
+                     android:text="IPL SCHEDULE 2020"
+                     android:textColor="#ffffff"
+                     android:textSize="16sp"
+                     android:textStyle="bold"
+                     android:typeface="serif" />
+
+             </LinearLayout>
+
+             <GridLayout
+                 android:clickable="true"
+                 android:foreground="?android:attr/selectableItemBackground"
+                 android:id="@+id/gridlayoutID"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="8"
+                 android:columnCount="2"
+                 android:rowCount="3"
+                 android:alignmentMode="alignMargins"
+                 android:columnOrderPreserved="false"
+                 android:padding="14dp"
+                 >
+                 &lt;!&ndash; coloum1 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     android:clickable="true"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/schedule"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Schedule"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+                 &lt;!&ndash; coloum2 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/group"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/team_and_squad"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="16sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+                 &lt;!&ndash; coloum3 &ndash;&gt;
+                 &lt;!&ndash;<androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:clickable="true">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/player_with_bat"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Player list"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>&ndash;&gt;
+                 &lt;!&ndash; coloum4 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:clickable="true"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/cricket"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Live score"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+                 &lt;!&ndash; coloum5 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:clickable="true"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/trophy"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Winner list"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+                 &lt;!&ndash; coloum6 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:clickable="true"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/top_three"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Point Table"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+                 &lt;!&ndash; coloum7 &ndash;&gt;
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="0dp"
+                     android:layout_height="0dp"
+                     android:layout_columnWeight="1"
+                     android:layout_rowWeight="1"
+                     android:layout_marginBottom="16dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="16dp"
+                     app:cardCornerRadius="8dp"
+                     app:cardElevation="5dp"
+                     android:clickable="true"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <LinearLayout
+                         android:orientation="vertical"
+                         android:layout_gravity="center_horizontal|center_vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             android:src="@drawable/quiz_icon"
+                             android:layout_gravity="center_horizontal"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Play quiz"
+                             android:textAlignment="center"
+                             android:textColor="#000000"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:fontFamily="serif"/>
+
+                     </LinearLayout>
+
+                 </androidx.cardview.widget.CardView>
+
+
+             </GridLayout>
+
+         </LinearLayout>-->
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationID"
+            android:background="#ffffff"
+            app:menu="@menu/drawer_menu"
+            app:itemIconTint="@color/colorPrimary"
+            app:itemTextColor="@color/colorPrimary"
+            app:headerLayout="@layout/navigarion_header">
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+</RelativeLayout>

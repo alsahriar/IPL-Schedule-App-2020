@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.PointTable"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:stretchColumns="*"
+        android:layout_weight="9">
+
+        <TableRow
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:weightSum="9"
+            android:background="@color/colorPrimary" >
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="POS"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="IPL Team"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Play"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Win"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Loss"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="PTS"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="NRR"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="9"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="CSK"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:layout_weight="2"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </TableRow>
+        <TableRow
+            android:background="#DBDADA"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="DC"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="KKR"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+        </TableRow>
+        <TableRow
+            android:background="#DBDADA"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="KXIP"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="MI"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+        </TableRow>
+        <TableRow
+            android:background="#DBDADA"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="6"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="RR"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="7"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="RCB"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow
+            android:background="#DBDADA"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="8"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="SRH"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="serif" />
+        </TableRow>
+
+
+    </TableLayout>
+    <!--<LinearLayout
+        android:id="@+id/banner_container3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_Point_table"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobBnrADsID">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="6dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#F8D9D9"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/player_profile"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:src="@drawable/srh6_warner"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/artifika"
+                android:gravity="left"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Rohit Sharma"
+                android:textColor="@android:color/background_dark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/player_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/aldrich"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:text="Price: 5 cr"
+                android:textColor="#FD0420"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Batsman"
+                android:textColor="@android:color/background_dark"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/aldrich"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:text="India"
+                android:textColor="#00796B"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/player_status"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/captain"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/image_share"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/next2" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/devider"
+        android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="10"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/top_recorderPos"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:text="01"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/top_recorderName"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:fontFamily="serif"
+            android:text="Player Name"
+            android:textColor="#000000"/>
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/record_score"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingStart="0dp"
+            android:paddingEnd="10dp"
+            android:text="5412 "
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <!--<TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="*">
+
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:weightSum="5"
+        android:background="#0097A7" >
+
+
+
+
+        <TextView
+            android:id="@+id/topPlayer_name"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/gradient_background"
+            android:layout_weight="4"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="1. Chris Gayle"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="serif"/>
+
+
+        <TextView
+            android:id="@+id/top_record"
+            android:background="@drawable/gradient_background"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="550"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </TableRow>
+    </TableLayout>-->
+</androidx.cardview.widget.CardView>

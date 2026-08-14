@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardviewID"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="9">
+
+        <TextView
+            android:id="@+id/matchNoID"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/cantora_one"
+            android:text="1st Match"
+            android:textColor="#EE0A0A"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+        <LinearLayout
+            android:layout_weight="5"
+            android:weightSum="10"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/team1ID"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/cskicon"/>
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:src="@drawable/vs"/>
+            <ImageView
+                android:id="@+id/team2ID"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/micon"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vanueID"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Vanule: M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+            android:textColor="#630104"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dateID"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="23 March 2020 - 8:00 PM"
+            android:textColor="#303F9F"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="monospace"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

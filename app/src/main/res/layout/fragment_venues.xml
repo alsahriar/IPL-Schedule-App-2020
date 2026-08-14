@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Venues">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/veneusRecylerView"
+        android:layout_weight="9"/>
+    <!--<LinearLayout
+        android:id="@+id/banner_container4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <com.google.android.gms.ads.AdView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_venues"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobBnrADsID">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

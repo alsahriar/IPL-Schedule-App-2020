@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Team">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+
+
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/background_mc_header"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.5"
+                android:src="@drawable/iplp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Participating Team's in IPL 2020"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Total Team: 8"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/Teamagridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+            <!-- coloum1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cskicon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai Super Kings"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- coloum2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/micon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mumbai Indians"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- coloum3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/kkricon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolkata Knight Riders"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/srhicon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunrisers Hyderabad"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- coloum4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rcbion"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Royal Challengers Bangalore"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- coloum4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/dcicon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi Capitals"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- coloum5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/kxiiicon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kings XI Punjab"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+            </androidx.cardview.widget.CardView>
+            <!-- coloum6 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tCard8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rricon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rajasthan Royals"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/devider"
+                    android:layout_gravity="bottom"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

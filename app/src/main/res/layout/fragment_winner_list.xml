@@ -1,0 +1,2099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.WinnerList"
+    android:orientation="vertical">
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        &lt;!&ndash; cardview1&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2008"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2008"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Rajasthan Royals"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textColor="#F02020"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Shaun Marsh(KXIP)"
+                            android:textColor="#F57C00"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Sohail Tanvir(RR)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Yusuf Pathan(RR)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Shane Watson(RR)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview2&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2009"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2009"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Deccan Chargers"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Royal Challengers Bangalore"
+                            android:textColor="#F02020"
+                            android:textSize="8sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Matthew Hayden(CSK)"
+                            android:textColor="#F57C00"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  R.P Sing(DC)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Anil Kumble(RCB)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Adam Gilchrist(DC)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview3&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2010"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2010"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Mumbai Indians"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Sachin Tendulkar(MI)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Pragyan Ojha(DC)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Suresh Raina(CSK)"
+                            android:textColor="#303F9F"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:text="  Sachin Tendulkar(MI)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview4&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2011" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2011"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textColor="#208324"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Royal Challengers Bangalore"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chris Gayle(RCB)"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Lasith Malinga(MI)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Murali Vijay(CSK)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chris Gayle(RCB)"
+                            android:textColor="#C2185B"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview5&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2012"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2012"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner                          :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Kolkata Knight Riders"
+                            android:textColor="#208324"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up	                  :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap                 :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chris Gayle(RCB)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap                   :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Morne Morkel(DD)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match      :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Manvinder Bisla(KKR)"
+                            android:textColor="#303F9F"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tourn   :  "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Sunil Narine(KKR)"
+                            android:textColor="#C2185B"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview6&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2013"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner                          :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Mumbai Indians"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up	                  :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap                 :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Michael Hussey(CSK)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap                   :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Dwayone Bravo(CSK)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match      :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Kieron Pollard(MI)"
+                            android:textColor="#303F9F"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tourn   :  "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Shane Watson(RR)"
+                            android:textColor="#C2185B"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview7&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2014"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2014"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner                          :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Kolkata Knight Riders"
+                            android:textColor="#208324"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up	                  :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Kings XI Punjab"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap                 :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Robin Uthappa(KKR)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap                   :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Mohit Sharma(CSK)"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match      :"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Manish Pandey(KKR)"
+                            android:textColor="#303F9F"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tourn   :  "
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="  Glenn Maxwell(KXIP)"
+                            android:textColor="#C2185B"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview8&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2015"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Mumbai Indians"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  David Warner(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Dwayne Bravo(CSK)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Rohit Sharma(MI)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tourn"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Andre Russell(KKR)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview9&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2016"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Sunrisers Hyderabad"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Royal Challengers Bangalore"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Virat Kohli(RCB)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Bhuvneswar Kumar(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Ben Cutting(SRH)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournnament"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Virat Kohli(RCB)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview10&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2017"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Mumbai Indians"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Rising Pune Supergiants"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  David Warner(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Bhuvneswar Kumar(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Krunal Pandya(MI)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tourn"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Ben Stokes(RPS)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        &lt;!&ndash; cardview11&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2018"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Sunrisers Hyderabad"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Kane Williamson(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Andrew Tye(KXIP)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Shane Watson(CSK)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Sunil Narine(KKR)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+ &lt;!&ndash; cardview11&ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/champion2019"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff22"
+                    android:typeface="monospace"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Winner"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Mumbai Indians"
+                            android:textColor="#208324"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Runner-up"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Chennai Super Kings"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F02020"
+                            android:typeface="serif"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Orange Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  David Warner(SRH)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57C00"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Purple Cap"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Imran Tahir(CSK)"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#689F38"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Man of the match"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Andre Russell(KKR)"
+                            android:textColor="#303F9F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_gravity="left">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Player of the tournament"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Jasprit Bumrah(MI)"
+                            android:textColor="#C2185B"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:layout_marginBottom="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/winnerlist_recylerView" />
+    <!--<LinearLayout
+        android:id="@+id/wBanner_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_winnerList"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobBnrADsID">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</LinearLayout>

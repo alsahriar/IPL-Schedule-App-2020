@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="General">
+            <menu>
+                <item
+                    android:id="@+id/homeId"
+                    android:icon="@drawable/house"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/scheduleId"
+                    android:icon="@drawable/schedule"
+                    android:title="Schedule" />
+                <item
+                    android:id="@+id/playerlistId"
+                    android:icon="@drawable/group"
+                    android:title="@string/team_and_squad" />
+                <item
+                    android:id="@+id/LivescoreId"
+                    android:icon="@drawable/cricket"
+                    android:title="Live score" />
+                <item
+                    android:id="@+id/winnerID"
+                    android:icon="@drawable/trophy"
+                    android:title="Winner list" />
+                <item
+                    android:id="@+id/point_tableId"
+                    android:icon="@drawable/top_three"
+                    android:title="Point table" />
+                <item
+                    android:id="@+id/playquizId"
+                    android:icon="@drawable/stadium"
+                    android:title="Venues" />
+                <item
+                    android:id="@+id/play_crickert"
+                    android:icon="@drawable/doodle"
+                    android:title="Play Cricket"/>
+                <item
+                    android:icon="@drawable/ball"
+                    android:title="Record Corner"
+                    android:id="@+id/record_corner"/>
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/social_media">
+        <menu>
+            <item
+                android:id="@+id/shareId"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/ratingId"
+                android:icon="@drawable/like"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/aboutUSId"
+                android:icon="@drawable/question"
+                android:title="About us" />
+            <item
+                android:id="@+id/feedbackId"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/privacyId"
+                android:icon="@drawable/keyhole"
+                android:title="Privacy Policy" />
+
+        </menu>
+
+    </item>
+
+</menu>

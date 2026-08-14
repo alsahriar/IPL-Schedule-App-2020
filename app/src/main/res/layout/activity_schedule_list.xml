@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleList"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recylerviewID" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admobBnrADsID" />
+    </LinearLayout>
+
+    <com.futuremind.recyclerviewfastscroll.FastScroller
+        android:id="@+id/fastscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        app:fastscroll__bubbleColor="#F70363"
+        app:fastscroll__handleColor="#8B8ED3" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_upward"
+        android:id="@+id/fab"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <!--<LinearLayout
+        android:id="@+id/banner_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">IPL Schedule 2020</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="social_media">Social media</string>
+    <string name="team_and_squad"><![CDATA[Team & Squad]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ban_placementID">1083063058709834_1083075835375223</string>
+    <string name="int_placementID">1083063058709834_1083125865370220</string>
+
+
+    <string name="admobAppIDr">ca-app-pub-1561330559774376~6892698251</string>
+    <string name="admobAppID">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="admobBnrADsIDr">ca-app-pub-1561330559774376/3347725985</string>
+    <string name="admobBnrADsID">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="admobIntAdsIDr">ca-app-pub-1561330559774376/4184281032</string>
+    <string name="admobIntAdsID">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="admobTestAppID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admobTestBnrAdsUnitID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admobTestIntAdsUnitID">"ca-app-pub-3940256099942544/1033173712"</string>
+</resources>

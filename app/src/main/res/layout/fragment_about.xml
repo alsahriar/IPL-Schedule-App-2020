@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/apptittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/versionTxtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="Version : 1.0"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/apk_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Desing and Developed by"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff"
+
+        android:textSize="15sp"
+        android:typeface="serif" />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#1976D2"
+        android:fontFamily="@font/lemon"
+        android:gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="AL SAHRIAR"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:text="Follow me on instagram"/>
+    <Button
+        android:id="@+id/instagram"
+        android:background="#DA0C5D"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:fontFamily="@font/lemon"
+        android:gravity="center"
+        android:text="Instagram"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

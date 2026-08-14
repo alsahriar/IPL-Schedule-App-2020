@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/player_details_dialog"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Dplayer_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/csk1_dhoni" />
+
+    <LinearLayout
+        android:id="@+id/layoutBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/csk_dialog_bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/Dplayer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/artifika"
+                    android:text="MS Dhoni"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="#ffffff"
+                    android:showDividers="middle">
+
+                    <TableRow
+                        android:layout_gravity="left"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Role"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/DP_Role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="  Wicketkeeper batsman  "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Batting Style"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/DP_battingStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Right-handed"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Bowling Style"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/DP_bowlingStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Right-arm medium"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="left"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Nationality"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/DP_nationality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="Indian"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_button"
+            android:text="Go back"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
