@@ -25,3 +25,5 @@ captures/
 
 # IntelliJ
 *.iml
+# Firebase
+google-services.json
